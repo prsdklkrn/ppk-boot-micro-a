@@ -9,7 +9,7 @@ public class MicroAServiceImpl implements MicroAService {
 
 	@Override
 	public MSData getData() {
-		return new MSData("1234", "welcome", 10);
+		return new MSData("1234", "Title served from Micro A!!", 10);
 	}
 
 }
