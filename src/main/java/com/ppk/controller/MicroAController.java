@@ -18,7 +18,7 @@ import com.wordnik.swagger.annotations.ApiOperation;
 @RequestMapping
 public class MicroAController {
 
-	private static final String		MS_BASE_METRIC_URL	= "/ms/v1/data";
+	private static final String	MS_BASE_METRIC_URL	= "/ms/v1/data";
 
 	private final MicroAService	microAService;
 
@@ -27,8 +27,9 @@ public class MicroAController {
 		this.microAService = microAService;
 	}
 
-	@Timed(name = MS_BASE_METRIC_URL + "/.GET", absolute = true)
-	@ExceptionMetered(name = MS_BASE_METRIC_URL + "/.GET." + ExceptionMetered.DEFAULT_NAME_SUFFIX, absolute = true)
+	@Timed(name = MS_BASE_METRIC_URL + " == [GET]", absolute = true)
+	@ExceptionMetered(name = MS_BASE_METRIC_URL + " == [GET " + ExceptionMetered.DEFAULT_NAME_SUFFIX
+			+ "]", absolute = true)
 	@ApiOperation(value = "Get micro a data ", notes = "Get micro a data ")
 	@RequestMapping(produces = MediaType.APPLICATION_JSON_VALUE)
 	public @ResponseBody MSData welcomeMessage() {
