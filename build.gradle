@@ -35,11 +35,12 @@ dependencies {
 	compile("org.springframework.boot:spring-boot-starter-web")
 	compile("org.springframework.boot:spring-boot-starter-actuator")
 	
-	compile(group: 'com.mangofactory', name: 'swagger-springmvc', version: '1.0.2')
 	compile(group: 'com.google.guava', name: 'guava', version: '18.0')
+	
 	compile('org.projectlombok:lombok:1.16.10')
 	compile project(':ppk-consul-client')
 	compile project(':ppk-metrics')
+	compile project(':ppk-base-configs')
 	
 	testCompile("org.springframework.boot:spring-boot-starter-test")
 }

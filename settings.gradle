@@ -1,2 +1,3 @@
 includeFlat 'ppk-consul-client'
 includeFlat 'ppk-metrics'
+includeFlat 'ppk-base-configs'

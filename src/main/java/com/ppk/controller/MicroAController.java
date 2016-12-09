@@ -10,10 +10,11 @@ import com.codahale.metrics.annotation.ExceptionMetered;
 import com.codahale.metrics.annotation.Timed;
 import com.ppk.entities.MSData;
 import com.ppk.service.MicroAService;
-import com.wordnik.swagger.annotations.Api;
-import com.wordnik.swagger.annotations.ApiOperation;
 
-@Api(value = "msdata", description = "Exposes endpoints to read MS data", position = 0)
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+
+@Api(value = "msdata")
 @RestController
 @RequestMapping
 public class MicroAController {
