@@ -1,0 +1,8 @@
+{
+  "title": [
+    {
+      "pattern": "^(build|ci|docs|feat|fix|perf|refactor|style|test)((.+))?-((.+)).+",
+      "message": "Your title needs to be prefixed with a JIRA ticket number Eg: PPK-1234 Wonder work"
+    }
+  ]
+}
