@@ -1,1 +1,1 @@
-## A sample spring boot microservice.
+# A sample spring boot microservice.
